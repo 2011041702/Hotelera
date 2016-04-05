@@ -110,7 +110,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.MedioReserva">
-    <Position X="14.75" Y="10.5" Width="2" />
+    <Position X="16" Y="12.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAIAAACAAAAAAAAAIQAAAAAAAAAQ=</HashCode>
       <FileName>MedioReserva.cs</FileName>
