@@ -11,7 +11,7 @@ namespace Hotelera.Dominio
         public int ID_Personal { get; private set; }
         public virtual Cargo ID_Cargo { get; private set; }
         public string Estado_Personal { get; private set; }
-        ///public virtual Persona Persona { get; private set; }
+   
         public Personal(Cargo id_cargo,int id_per, string estado_per, string nombre_cli, string apel_cli, string gen_cli, string tipoDoc_cli,
                                                             string nrDoc_cli, string tel_cli, string email_cli, string dir_cli) 
                                                             :base( nombre_cli, apel_cli, gen_cli, tipoDoc_cli,

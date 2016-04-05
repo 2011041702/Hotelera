@@ -8,6 +8,7 @@ namespace Hotelera.Dominio
 {
     public class Cliente : Persona
     {
+        
         public int ID_Cliente { get; private set; }
         public string Estado_Cliente { get; private set; }
         public virtual Persona Persona { get; private set; }
