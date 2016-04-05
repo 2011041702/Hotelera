@@ -34,24 +34,7 @@ namespace Hotelera.Dominio
             this.Email_Persona = email_per;
             this.Direccion_Persona = dir_per;
         }
-        /*public static Persona Agregar(int id_per,string nombre_per,string apel_per,
-                                        string gen_per,string tipoDoc_per,string nrDoc_per,string tel_per,string email_per,string dir_per)
-        {
-            //this.ID_Persona = id_persona;
-            return new Persona()
-            {
-                ID_Persona = id_per,
-                Nombre_Persona = nombre_per,
-                Apellido_Persona = apel_per,
-                Genero_Persona = gen_per,
-                TipoDocumentoPersona = tipoDoc_per,
-                NumeroDocumentoPersona = nrDoc_per,
-                Telefono_Persona = tel_per,
-                Email_Persona = email_per,
-                Direccion_Persona = dir_per
-
-            };
-        }*/
+       
         
     }
     
