@@ -49,6 +49,8 @@
     <Compile Include="Estado_Comprobante.cs" />
     <Compile Include="Habitacion.cs" />
     <Compile Include="Inventario.cs" />
+    <Compile Include="IRepositorio.cs" />
+    <Compile Include="IRepositorioLectura.cs" />
     <Compile Include="LoginUsuario.cs" />
     <Compile Include="MedioReserva.cs" />
     <Compile Include="Pagos.cs" />

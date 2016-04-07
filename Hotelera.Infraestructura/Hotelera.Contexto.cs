@@ -12,9 +12,12 @@ namespace Hotelera.Infraestructura
     {
         //ERRORES
         //int A;
-        public HoteleraContexto() : base("Conexion")
+        public HoteleraContexto(string Conexion) : base("Conexion")
         {
             Database.SetInitializer<HoteleraContexto>(new InicializadorBD());
+        }
+        public HoteleraContexto() : base("HotelConexion")
+        {
         }
 
         public DbSet<Personal> Empleados { get; set; }
