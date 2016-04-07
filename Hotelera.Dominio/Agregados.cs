@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
     //ej
+
+
 {
     
     public class Agregados
