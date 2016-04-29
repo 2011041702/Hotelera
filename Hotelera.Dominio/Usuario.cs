@@ -9,12 +9,12 @@ namespace Hotelera.Dominio
     public class Usuario
     {
         public int ID_usu { get; private set; }
-        public virtual Personal id_Personal { get; private set; }
+        public virtual Empleado id_Personal { get; private set; }
         public string Nombre_Usuario { get; private set; }
         public string Contraseña_Usuario { get; private set; }
         public virtual Estado_Usuario ID_Estado { get; private set; }
         public virtual Acceso_Usuario ID_AccesoUsuario { get; private set; }
-        public static Usuario Registrar(Personal id_pers, string nomb_usu, string contra_usu, Estado_Usuario id_estad)
+        public static Usuario Registrar(Empleado id_pers, string nomb_usu, string contra_usu, Estado_Usuario id_estad)
         {
             return new Usuario()
             {
@@ -24,7 +24,7 @@ namespace Hotelera.Dominio
                 ID_Estado = id_estad
             };
         }
-        public void Actualizar(int id_us,Personal id_pers, string nomb_usu, string contra_usu, Estado_Usuario id_estad)
+        public void Actualizar(int id_us,Empleado id_pers, string nomb_usu, string contra_usu, Estado_Usuario id_estad)
         {
             ID_usu = id_us;
             id_Personal = id_pers;

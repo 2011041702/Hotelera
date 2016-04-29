@@ -20,14 +20,14 @@ namespace Hotelera.Infraestructura
         {
         }
 
-        public DbSet<Personal> Empleados { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Cargo> Cargos { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Persona>().HasKey(k => k.NumeroDocumentoPersona);
-            modelBuilder.Entity<Personal>().HasKey(k => k.ID_Personal);
+            modelBuilder.Entity<Empleado>().HasKey(k => k.ID_Personal);
             modelBuilder.Entity<Cargo>().HasKey(k => k.ID_Cargo);
             ///mapera llaves foraneas
             /// identity

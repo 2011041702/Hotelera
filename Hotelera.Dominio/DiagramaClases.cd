@@ -1,51 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Hotelera.Dominio.Cargo">
-    <Position X="5.25" Y="3.25" Width="2" />
+    <Position X="6.75" Y="3.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAAAAEAIAAAAAAAAAIQAAABAAAAQQ=</HashCode>
       <FileName>Cargo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Estado_Usuario">
-    <Position X="10.5" Y="8.75" Width="2" />
+    <Position X="10.75" Y="8.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAQ=</HashCode>
       <FileName>Estado.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Hotelera.Dominio.Personal">
-    <Position X="1.25" Y="4" Width="1.75" />
+  <Class Name="Hotelera.Dominio.Empleado">
+    <Position X="0.5" Y="4" Width="2" />
+    <InheritanceLine Type="Hotelera.Dominio.Persona" FixedFromPoint="true">
+      <Path>
+        <Point X="1.5" Y="12.25" />
+        <Point X="1.5" Y="6.261" />
+      </Path>
+    </InheritanceLine>
     <AssociationLine Name="ID_Cargo" Type="Hotelera.Dominio.Cargo" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="3" Y="5.131" />
-        <Point X="3.375" Y="5.131" />
-        <Point X="3.375" Y="4.589" />
-        <Point X="5.25" Y="4.589" />
+        <Point X="2.5" Y="5.131" />
+        <Point X="2.875" Y="5.131" />
+        <Point X="2.875" Y="5.125" />
+        <Point X="6.75" Y="5.125" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAIQAAAAAAABAA=</HashCode>
-      <FileName>Personal.cs</FileName>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAEAAAAAAAIQAAAAAAAAAA=</HashCode>
+      <FileName>Empleado.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ID_Cargo" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Usuario">
-    <Position X="7.5" Y="7.5" Width="2.25" />
+    <Position X="6.25" Y="7.5" Width="2.25" />
+    <AssociationLine Name="ID_AccesoUsuario" Type="Hotelera.Dominio.Acceso_Usuario" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.625" Y="9.824" />
+        <Point X="7.625" Y="10.199" />
+        <Point X="9.531" Y="10.199" />
+        <Point X="9.531" Y="11.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.081" Y="0.308" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAIAgAwgAAAAAIAAAAAgAAAAQ=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="id_Personal" />
       <Property Name="ID_Estado" />
       <Property Name="ID_AccesoUsuario" />
+      <Property Name="id_Personal" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Cliente">
-    <Position X="6" Y="14" Width="3" />
+    <Position X="5.5" Y="13.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AACIAAQAAAAAAAAAAAAAAQgAAAAAAAAIAAAEAAAAAEA=</HashCode>
       <FileName>Cliente.cs</FileName>
@@ -59,10 +76,10 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Inventario">
-    <Position X="5.5" Y="11" Width="2.5" />
+    <Position X="5.25" Y="10.5" Width="2.5" />
     <AssociationLine Name="ID_Pro" Type="Hotelera.Dominio.Proveedor">
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="0.182" Y="-1.55" Height="0.182" Width="1.939" />
+        <Position X="0.124" Y="-2.439" Height="0.182" Width="0.744" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -74,14 +91,20 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Proveedor">
-    <Position X="2.75" Y="7" Width="2.75" />
+    <Position X="2" Y="7" Width="2.75" />
+    <InheritanceLine Type="Hotelera.Dominio.Persona" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.188" Y="12.25" />
+        <Point X="3.188" Y="9.261" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAABAAIQAAAAAAAAAA=</HashCode>
       <FileName>Proveedor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Servicios">
-    <Position X="18.75" Y="3.25" Width="2.5" />
+    <Position X="19" Y="3" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAQISAAECAAEAAA=</HashCode>
       <FileName>Servicios.cs</FileName>
@@ -117,7 +140,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Agregados">
-    <Position X="15.25" Y="3.25" Width="2.5" />
+    <Position X="15.25" Y="2.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAQAAAAEAAAAAAAAAAAIQAAAAAAEAAA=</HashCode>
       <FileName>Agregados.cs</FileName>
@@ -139,9 +162,9 @@
       <FileName>Pagos.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="ID_Reserva" />
       <Property Name="ID_TipoPago" />
       <Property Name="ID_Comprobante" />
+      <Property Name="ID_Reserva" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Comprobante_Pago">
@@ -169,14 +192,18 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.LoginUsuario">
-    <Position X="9.75" Y="5.5" Width="1.5" />
-    <AssociationLine Name="ID_Usuario" Type="Hotelera.Dominio.Usuario" FixedFromPoint="true" FixedToPoint="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <AssociationLine Name="ID_Usuario" Type="Hotelera.Dominio.Usuario" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="6.988" />
-        <Point X="11" Y="7.25" />
-        <Point X="9" Y="7.25" />
-        <Point X="9" Y="7.5" />
+        <Point X="10" Y="6.75" />
+        <Point X="9.5" Y="6.75" />
+        <Point X="9.5" Y="6.625" />
+        <Point X="7.562" Y="6.625" />
+        <Point X="7.562" Y="7.5" />
       </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.756" Y="0.547" />
+      </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAAAACAAAAACAAAAAAAAAAAAAACAAA=</HashCode>
@@ -187,14 +214,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Acceso_Usuario">
-    <Position X="8.75" Y="11" Width="1.5" />
+    <Position X="8.5" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Acceso_Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Persona">
-    <Position X="1.75" Y="14" Width="2.75" />
+    <Position X="0.75" Y="12.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAABAIAAAAAAAEAAAAAAgBAAABEAAAAAAAA=</HashCode>
       <FileName>Persona.cs</FileName>

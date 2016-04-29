@@ -7,6 +7,7 @@ using System.Data.Entity;
 
 namespace Hotelera.Infraestructura
 {
+
     public class ContextoBase<T> : DbContext where T : DbContext
     {
         public ContextoBase(string as_conexion)
