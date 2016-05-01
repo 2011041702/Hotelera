@@ -13,5 +13,10 @@ namespace Hotelera.Dominio
         public virtual Comprobante_Pago ID_Comprobante { get; private set; }
         public DateTime Fecha_Emision { get; private set; }
         public DateTime Fecha_Pago { get; private set; }
+
+        public void grabarVenta()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

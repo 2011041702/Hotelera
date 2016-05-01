@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4e80121a-f7f2-4eff-9bb4-031bd0f72c13" name="UMLUseCaseDiagram1" linkedPackageId="31648e07-2e77-4feb-8bb2-2cdaa043221b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="4e80121a-f7f2-4eff-9bb4-031bd0f72c13" name="UMLUseCaseDiagram1" linkedPackageId="31648e07-2e77-4feb-8bb2-2cdaa043221b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="1a769630-8736-4ec2-b3b9-3579393f34c4" name="Recepcionista" isAbstract="false" isLeaf="false">
@@ -59,6 +59,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="030f0487-6347-4e0f-8cba-dd2d91685d55" />
           </association>
+          <association Id="bf238185-d383-4969-a680-f6040dad7912" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Generar comprobantes de Pago" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4001a906-88df-4149-9e44-067de42b48e0" LastKnownName="Grabar Venta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f06b1653-2079-4121-b16f-af0210c57a49" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="34b097e5-e4b1-4521-9d3b-059207c067eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dbbcbd7-ad9b-42cc-b21b-858c18abe8b5" name="Generar comprobantes de Pago" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d7a11837-8e2f-4d92-bc63-14841d80588c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25fa22e2-ed5d-47d1-8431-25886b74df22" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -101,22 +117,6 @@
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="df2781b3-74f6-42b7-9731-6122ffc464e7" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Solicitar Servicio" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f635f40c-1489-4f96-a65a-7a6aac1fda51" LastKnownName="Solicitar Servicio" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="67f0b25a-82f9-42f3-91dd-f795f4d85639" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="9872191a-0bc9-4d21-889c-05c503faf796" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="86a3a31f-7129-409f-8c97-e99b9722a11f" name="Solicitar Servicio" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="35343532-bc7f-4a84-bd30-1d8779f04c2c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d68065b4-c4ca-4266-b770-c2d2ee23fec7" />
-          </association>
           <association Id="aa35353f-8fde-4462-8f33-1478c155fd73" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Consultar Habitaciones Disponibles" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="367cdc74-82c3-4036-87ed-e47cf86b6b29" LastKnownName="Consultar Habitaciones Disponibles" />
             <relationshipOwnedElementsInternal>
@@ -210,6 +210,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="a9de51c7-f678-46a3-a94b-eaa1a9781aeb" />
           </association>
+          <association Id="485327f7-87c1-4e31-8639-3521c057dd0e" isDerived="false" sourceEndRoleName="Administrador" targetEndRoleName="Calcular Ganancias" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2ad2efd2-fd5f-4252-888a-3b59f1d9203e" LastKnownName="Calcular Ganancias" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3b057dc-c2d0-42a0-8430-5b70869d66ad" name="Administrador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="677ea40b-e329-4f70-ab83-fce2bc657aed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="973a07c2-98da-4f43-8667-2dfcf6842ea5" name="Calcular Ganancias" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="716b2f7b-62c1-4bb5-8230-43a87c71685c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="384b8468-a6f9-45c8-ab48-c8045fbfd5aa" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -226,6 +242,12 @@
     <packageHasNamedElement>
       <useCase Id="8d34a634-b0b7-4926-9ba4-a4d1bcc3109f" name="Gestionar Empleados" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c6a05c3d-ef7e-4aa8-9c42-27ecbe75f4d3" />
+        <additions>
+          <include Id="6daf1291-ac62-43bb-bce5-28705c7c44ab">
+            <useCaseMoniker Id="38e641fe-c1f2-4a6e-a152-9460429ce5ae" LastKnownName="Buscar Empleado" />
+            <elementDefinition Id="c1dac103-efad-4c92-8a10-18db1fb2c00c" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="85a4c6ac-3e1f-46c4-9f1f-42680ed75ecf" LastKnownName="Administracion de Sistema" />
         </subjects>
@@ -236,14 +258,6 @@
         <elementDefinition Id="bc4c1119-c7d9-4d1e-9b0a-18840a60f081" />
         <subjects>
           <subsystemMoniker Id="85a4c6ac-3e1f-46c4-9f1f-42680ed75ecf" LastKnownName="Administracion de Sistema" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="f635f40c-1489-4f96-a65a-7a6aac1fda51" name="Solicitar Servicio" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="903bd98a-22f1-401c-9069-814f82e806f5" />
-        <subjects>
-          <subsystemMoniker Id="0fb9d839-ef6a-4b16-b9c1-16d8ad13a653" LastKnownName="Gestion de Reservas" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -293,10 +307,10 @@
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <useCase Id="d8cd0487-7216-46db-9775-c0ff69305df1" name="Buscar Habitacion" isAbstract="false" isLeaf="false">
+      <useCase Id="d8cd0487-7216-46db-9775-c0ff69305df1" name="Buscar Servicios" isAbstract="false" isLeaf="false">
         <elementDefinition Id="60979048-4a54-4c7f-89ce-d5f668061ec4" />
         <subjects>
-          <subsystemMoniker Id="85a4c6ac-3e1f-46c4-9f1f-42680ed75ecf" LastKnownName="Administracion de Sistema" />
+          <subsystemMoniker Id="0fb9d839-ef6a-4b16-b9c1-16d8ad13a653" LastKnownName="Gestion de Reservas" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -311,12 +325,6 @@
     <packageHasNamedElement>
       <useCase Id="38e641fe-c1f2-4a6e-a152-9460429ce5ae" name="Buscar Empleado" isAbstract="false" isLeaf="false">
         <elementDefinition Id="6f219f2e-4964-4371-9bde-c4c22a2eb021" />
-        <extendedCases>
-          <extend Id="4d5fe9b7-fbae-4ccc-a399-ab41f0c7e2c0">
-            <useCaseMoniker Id="8d34a634-b0b7-4926-9ba4-a4d1bcc3109f" LastKnownName="Gestionar Empleados" />
-            <elementDefinition Id="65009b96-3996-4f84-b6c7-33218c40ef61" />
-          </extend>
-        </extendedCases>
         <subjects>
           <subsystemMoniker Id="85a4c6ac-3e1f-46c4-9f1f-42680ed75ecf" LastKnownName="Administracion de Sistema" />
         </subjects>
@@ -383,6 +391,10 @@
             <useCaseMoniker Id="f36df648-6066-4362-8270-9eeec4d315e9" LastKnownName="Buscar Cliente con Reservacion" />
             <elementDefinition Id="b4d04b3e-8f3c-4c65-8b76-57592ed055a0" />
           </include>
+          <include Id="883b58e2-e3d4-4963-b592-4d1235de3d13">
+            <useCaseMoniker Id="d8cd0487-7216-46db-9775-c0ff69305df1" LastKnownName="Buscar Servicios" />
+            <elementDefinition Id="b841859a-9cd6-4558-948d-0e5a5de82803" />
+          </include>
         </additions>
         <subjects>
           <subsystemMoniker Id="0fb9d839-ef6a-4b16-b9c1-16d8ad13a653" LastKnownName="Gestion de Reservas" />
@@ -400,6 +412,42 @@
     <packageHasNamedElement>
       <useCase Id="f36df648-6066-4362-8270-9eeec4d315e9" name="Buscar Cliente con Reservacion" isAbstract="false" isLeaf="false">
         <elementDefinition Id="baad2c92-7726-4ffa-b1e1-02600781bad3" />
+        <subjects>
+          <subsystemMoniker Id="0fb9d839-ef6a-4b16-b9c1-16d8ad13a653" LastKnownName="Gestion de Reservas" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2ad2efd2-fd5f-4252-888a-3b59f1d9203e" name="Calcular Ganancias" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3cd1e9f4-2f27-44ef-97d3-5c72ae907b85" />
+        <additions>
+          <include Id="2830a47e-8e77-4890-ace3-68fcd4a28f1f">
+            <useCaseMoniker Id="c7ce05c7-2b08-43dc-8c20-491795aebd12" LastKnownName="Buscar Reservaciones" />
+            <elementDefinition Id="4f973f8c-97f4-4c32-8a37-9717ccfc523d" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="85a4c6ac-3e1f-46c4-9f1f-42680ed75ecf" LastKnownName="Administracion de Sistema" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c7ce05c7-2b08-43dc-8c20-491795aebd12" name="Buscar Reservaciones" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d2a8d3db-e308-4ec0-bdae-9819654b5783" />
+        <subjects>
+          <subsystemMoniker Id="0fb9d839-ef6a-4b16-b9c1-16d8ad13a653" LastKnownName="Gestion de Reservas" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4001a906-88df-4149-9e44-067de42b48e0" name="Grabar Venta" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4cecdeba-f97f-482e-a33d-bb04b01ae41a" />
+        <additions>
+          <include Id="b6897cb8-2d06-4c54-a4c4-358bd73d83c3">
+            <useCaseMoniker Id="c7ce05c7-2b08-43dc-8c20-491795aebd12" LastKnownName="Buscar Reservaciones" />
+            <elementDefinition Id="31d8caee-d3f4-434c-a893-4a9371ca9948" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="0fb9d839-ef6a-4b16-b9c1-16d8ad13a653" LastKnownName="Gestion de Reservas" />
         </subjects>
