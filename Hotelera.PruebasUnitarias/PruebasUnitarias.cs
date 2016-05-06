@@ -8,6 +8,9 @@ namespace Hotelera.PruebasUnitarias
     [TestClass]
     public class PruebasUnitarias
     {
+         /// <summary>
+        ///  Aca Procederemos a realizar las pruebas unitarias de nuestras Interfaces
+        /// </summary>
         [TestMethod]
         public void TestMethod1()
         {
