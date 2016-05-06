@@ -227,32 +227,47 @@
       <FileName>Persona.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Hotelera.Dominio.CondimentoDecorador">
-    <Position X="9" Y="1" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CondimentoDecorador.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Hotelera.Dominio.internet">
-    <Position X="7" Y="1" Width="1.5" />
+  <Class Name="Hotelera.Dominio.InternetWifi">
+    <Position X="27.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
-      <FileName>internet.cs</FileName>
+      <FileName>InternetWifi.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Hotelera.Dominio.tvcable">
-    <Position X="7" Y="3.25" Width="1.5" />
+  <Class Name="Hotelera.Dominio.Tvcable">
+    <Position X="27.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
-      <FileName>tvcable.cs</FileName>
+      <FileName>Tvcable.cs</FileName>
+      <NewMemberFileName>tvcable.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Hotelera.Dominio.terma">
-    <Position X="9" Y="3.25" Width="1.5" />
+  <Class Name="Hotelera.Dominio.ServicioDecorador">
+    <Position X="24.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
-      <FileName>terma.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServicioDecorador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.BarSalon">
+    <Position X="27.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BarSalon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.ServicioHabitacion">
+    <Position X="27.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServicioHabitacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Lavanderia">
+    <Position X="27.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lavanderia.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

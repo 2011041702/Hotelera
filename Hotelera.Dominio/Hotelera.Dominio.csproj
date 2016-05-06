@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Acceso_Usuario.cs" />
     <Compile Include="Agregados.cs" />
+    <Compile Include="BarSalon.cs" />
     <Compile Include="Cargo.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Comprobante_Pago.cs" />
@@ -49,10 +50,11 @@
     <Compile Include="Estado.cs" />
     <Compile Include="Estado_Comprobante.cs" />
     <Compile Include="Habitacion.cs" />
-    <Compile Include="internet.cs" />
+    <Compile Include="InternetWifi.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="IRepositorio.cs" />
     <Compile Include="IRepositorioLectura.cs" />
+    <Compile Include="Lavanderia.cs" />
     <Compile Include="LoginUsuario.cs" />
     <Compile Include="MedioReserva.cs" />
     <Compile Include="Pagos.cs" />
@@ -61,11 +63,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs" />
     <Compile Include="Reserva.cs" />
+    <Compile Include="ServicioDecorador.cs" />
+    <Compile Include="ServicioHabitacion.cs" />
     <Compile Include="Servicios.cs" />
     <Compile Include="terma.cs" />
     <Compile Include="TipoPago.cs" />
     <Compile Include="TipoReserva.cs" />
-    <Compile Include="tvcable.cs" />
+    <Compile Include="Tvcable.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>

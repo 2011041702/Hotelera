@@ -10,7 +10,7 @@ namespace Hotelera.Dominio
         ///  Parametros de tvcable
         /// </summary>
 
-    class tvcable
+    class Tvcable
     {
         public int precio { get; private set; }
         public string descripcion { get; private set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    public class internet
+    public class InternetWifi
     {
          ///    <sumary>
     ///     Parametros de servicio de internet
