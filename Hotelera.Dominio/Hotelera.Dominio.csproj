@@ -45,9 +45,11 @@
     <Compile Include="Cargo.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Comprobante_Pago.cs" />
+    <Compile Include="CondimentoDecorador.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="Estado_Comprobante.cs" />
     <Compile Include="Habitacion.cs" />
+    <Compile Include="internet.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="IRepositorio.cs" />
     <Compile Include="IRepositorioLectura.cs" />
@@ -60,8 +62,10 @@
     <Compile Include="Proveedor.cs" />
     <Compile Include="Reserva.cs" />
     <Compile Include="Servicios.cs" />
+    <Compile Include="terma.cs" />
     <Compile Include="TipoPago.cs" />
     <Compile Include="TipoReserva.cs" />
+    <Compile Include="tvcable.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
