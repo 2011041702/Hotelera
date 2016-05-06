@@ -7,7 +7,9 @@ using System.Data.Entity;
 
 namespace Hotelera.Infraestructura
 {
-
+        /// <summary>
+        /// Esta clase es vital para la correlacion de nuestra DB con el Contexo para realizar consultas o la interaccion misma
+        /// </summary>
     public class ContextoBase<T> : DbContext where T : DbContext
     {
         public ContextoBase(string as_conexion)
