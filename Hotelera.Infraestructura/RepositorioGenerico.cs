@@ -10,6 +10,10 @@ using System.Linq.Expressions;
 namespace Hotelera.Infraestructura
 {
 
+        /// <summary>
+        ///  Aca podemos encontrar los diferentes metodos que usaremos a lo largo del Proyecto
+        ///  tanto como los repositorios, la conectividad, para Obtener algun dato asi mismo como las consultas
+        /// </summary>
     public class RepositorioGenerico<T> : IRepositorio<T> where T : class
     {
         HoteleraContexto io_contexto;
