@@ -10,19 +10,21 @@ namespace Hotelera.Dominio
         ///  Parametros de tvcable
         /// </summary>
 
-    class Tvcable
+    public class Tvcable : ServicioDecorador
     {
-        public int precio { get; private set; }
-        public string descripcion { get; private set; }
-
-    ///    <sumary>
-    ///     Asignacion de costo extra de servicio
-    ///    </sumary>
-    
-        public void costo()
+        private Servicios tmpServicio;
+        public Tvcable(Servicios Servicio)
         {
-            precio = 5;
-            descripcion = " mas tvclabe ";
+            this.tmpServicio = Servicio;
+        }
+        public override decimal calcularCosto()
+        {
+            return tmpServicio.calcularCosto() + 10.00m;
+        }
+
+        public override string descripcion()
+        {
+            return tmpServicio.descripcion() + "Television Cable";
         }
     }
 }

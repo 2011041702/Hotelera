@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Hotelera.Dominio
 {
-    public class ServicioHabitacion : ServicioDecorador
+    public class Transporte:ServicioDecorador
     {
         private Servicios tmpServicio;
-        public ServicioHabitacion(Servicios Servicio)
+        public Transporte(Servicios Servicio)
         {
             this.tmpServicio = Servicio;
         }
@@ -19,7 +19,7 @@ namespace Hotelera.Dominio
 
         public override string descripcion()
         {
-            return tmpServicio.descripcion() + "Servicio a la Habitacion";
+            return tmpServicio.descripcion() + "S. de Transaporte d/hacia al aeropuerto";
         }
     }
 }
