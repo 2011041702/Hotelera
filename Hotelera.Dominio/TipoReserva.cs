@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/// <summary>
+///  tabla principal del sistema
+/// </summary>
+
 namespace Hotelera.Dominio
 {
     public class TipoReserva
